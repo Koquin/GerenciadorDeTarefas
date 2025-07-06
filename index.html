@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Gerenciamento de Tarefas</h1>
+
+    <div>
+        <label for="descricaoTarefa">Descrição da Tarefa:</label>
+        <input type="text" id="descricaoTarefa" placeholder="Ex: Concluir relatório">
+    </div>
+    <div>
+        <label for="prioridadeTarefa">Prioridade:</label>
+        <select id="prioridadeTarefa" class="prioridade-select">
+            <option value="baixa">Baixa</option>
+            <option value="media" selected>Média</option>
+            <option value="alta">Alta</option>
+        </select>
+    </div>
+    <div class="filtro-container">
+        <label for="filtroPrioridade">Filtrar por Prioridade:</label>
+        <select id="filtroPrioridade" class="prioridade-select">
+            <option value="">Todas</option>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+    </div>
+    <div class="button-group">
+        <button id="adicionarBtn">Adicionar Tarefa</button>
+        <button id="excluirTodasBtn">Excluir Todas</button>
+        <button id="reabrirTodasBtn">Reabrir Todas Concluídas</button>
+        <button id="concluirTodasBtn">Concluir Todas Pendentes</button>
+    </div>
+
+    <table id="tabelaTarefas">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Prioridade</th>
+                <th>Data de Início</th>
+                <th>Data de Conclusão</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

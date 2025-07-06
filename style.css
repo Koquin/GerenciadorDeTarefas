@@ -1,0 +1,240 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 40px;
+    background-color: #f3e8ff;
+    color: #4b0082;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #6a0dad;
+    text-align: center;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5e2b97;
+}
+
+/* Estilo para os campos de entrada */
+input {
+    padding: 14px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #a974e6;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input:focus {
+    border-color: #7a42c8;
+}
+
+/* Estilo específico para o campo de descrição */
+input#descricaoTarefa {
+    width: calc(100% - 140px);
+}
+
+/* Estilo para o campo de prioridade */
+.prioridade-select {
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid #a974e6;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.prioridade-select:focus {
+    border-color: #7a42c8;
+}
+
+/* Ajuste para os labels */
+label[for="descricaoTarefa"] {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label[for="prioridadeTarefa"] {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Botões principais */
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #6b1fb8;
+}
+
+/* Grupo de botões */
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e0c3fc;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+/* Botões de ação */
+button.concluirBtn {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.concluirBtn:hover {
+    background-color: #7e22ce;
+}
+
+button.excluirBtn {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #e11d48;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.excluirBtn:hover {
+    background-color: #9f1239;
+}
+
+button.reabrirBtn {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.reabrirBtn:hover {
+    background-color: #e68a00;
+}
+
+/* Classes de prioridade */
+.prioridade-baixa {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.prioridade-media {
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.prioridade-alta {
+    color: #F44336;
+    font-weight: bold;
+}
+
+/* Botões específicos */
+button#filtrarPrioridadeBtn {
+    background-color: #9C27B0;
+}
+
+button#filtrarPrioridadeBtn:hover {
+    background-color: #7B1FA2;
+}
+
+button#excluirTodasBtn {
+    background-color: #e11d48;
+}
+
+button#excluirTodasBtn:hover {
+    background-color: #9f1239;
+}
+
+button#reabrirTodasBtn {
+    background-color: #ff9800;
+}
+
+button#reabrirTodasBtn:hover {
+    background-color: #e68a00;
+}
+
+button#concluirTodasBtn {
+    background-color: #4CAF50;
+}
+
+button#concluirTodasBtn:hover {
+    background-color: #3e8e41;
+}
+
+.filtro-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtro-container label {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+#filtroPrioridade {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+}
